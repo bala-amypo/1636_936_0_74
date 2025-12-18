@@ -1,4 +1,3 @@
-
 package com.example.demo.service.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,19 +9,22 @@ import java.util.List;
 
 
 @Service
-public class StudentServiceImpl implements StudentService{
+public class StudentServiceImpl implements StudentService {
        @Autowired StudentRepo student;
+
        @Override
-  public StudentEntity postData(StudentEntity stu){
-    return student.save(stu);
-  }
-  @Override
-  public List<StudentEntity> getAllData(){
-    return student.findAll();
-  }
-  @Override
-  public  string deleteData(int id){
-    student.deleteByID(id);
-    return " User with " + id + " delete successfully";
-  }
+       public StudentEntity postData(StudentEntity stu) {
+           return student.save(stu);
+       }
+
+       @Override
+       public List<StudentEntity> getAllData() {
+           return student.findAll();
+       }
+
+       @Override
+       public String deleteData(int id) {
+           student.deleteById(id);
+           return " User with " + id + " delete successfully";
+       }
 }
