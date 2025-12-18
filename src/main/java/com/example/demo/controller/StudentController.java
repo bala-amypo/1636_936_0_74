@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+// import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 
@@ -16,7 +16,7 @@ public class StudentController{
     public StudentEntity sendData(@RequestBody StudentEntity stu){
         return ser.postData(stu);
     }
-    @GetMapping("/get")
+    @PostMapping("/get")
     public List<StudentEntity>getVal(){
         return ser.getAllData();
     }
