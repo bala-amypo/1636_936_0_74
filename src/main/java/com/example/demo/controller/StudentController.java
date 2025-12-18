@@ -20,4 +20,9 @@ public class StudentController{
     public List<StudentEntity>getVal(){
         return ser.getAllData();
     }
+    @PostMapping("/delete/{id}"){
+        public String deleteValue(@PathVariable int id){
+            return ser.deleteData(id);
+        }
+    }
 }
