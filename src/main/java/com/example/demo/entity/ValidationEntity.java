@@ -39,7 +39,7 @@ public class ValidationEntity{
         this.age=age;
     }
 
-    public Integer getId(){
+    public long getId(){
         return id;
     }
     public String Username(){
@@ -51,17 +51,17 @@ public class ValidationEntity{
     public String getPassword(){
         return password;
     }
-    public Date getAge(){
+    public int getAge(){
         return age;
     }
 
-    public StudentEntity(){};
-    public StudentEntity(Integer id, String name, String username, String password, Date created){
+    public ValidationEntity(){};
+    public ValidationEntity(long id, String username, String email, String password, int age){
         this.id=id;
-        this.name=name;
         this.username=username;
+        this.email=email;
         this.password=password;
-        this.created=created;
+        this.age=age;
     }
  
 }
