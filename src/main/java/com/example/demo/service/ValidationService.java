@@ -5,6 +5,6 @@ import com.example.demo.entity.ValidationEntity;
 
 public interface ValidationService{
     ValidationEntity postData(ValidationEntity stu); //method declaration
-    List<ValidationEntity> getAllData();
-    String deleteData (int id);
+    // List<ValidationEntity> getAllData();
+    // String deleteData (int id);
 }

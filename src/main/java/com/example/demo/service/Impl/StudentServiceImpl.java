@@ -21,7 +21,7 @@ public class StudentServiceImpl implements StudentService{
     return student.findAll();
   }
   @Override
-  public  string deleteData(int id){
+  public  String deleteData(int id){
     student.deleteById(id);
     return " User with " + id + " delete successfully";
   }
