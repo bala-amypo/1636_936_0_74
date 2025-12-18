@@ -26,33 +26,33 @@ public class ValidationEntity{
      public void setId(Long id){
         this.id=id;
     }
-    public void setUserName(String username){
-        this.name=name;
-    }
-    public void setUsername(String email){
+    public void setUsername(String username){
         this.username=username;
+    }
+    public void setEmail(String email){
+        this.email=email;
     }
     public void setPassword(String password){
         this.password=password;
     }
-    public void setCreated(Date created){
-        this.created=created;
+    public void setAge(int age){
+        this.age=age;
     }
 
     public Integer getId(){
         return id;
     }
-    public String getName(){
-        return name;
-    }
-    public String getUsername(){
+    public String Username(){
         return username;
+    }
+    public String getEmail(){
+        return email;
     }
     public String getPassword(){
         return password;
     }
-    public Date getCreated(){
-        return created;
+    public Date getAge(){
+        return age;
     }
 
     public StudentEntity(){};
