@@ -17,14 +17,15 @@ public class ValidationServiceImpl implements ValidationService {
            return student.save(stu);
        }
 
-       @Override
-       public List<ValidationEntity> getAllData() {
-           return student.findAll();
-       }
+//        @Override
+//        public List<ValidationEntity> getAllData() {
+//            return student.findAll();
+//        }
 
-       @Override
-       public String deleteData(int id) {
-           student.deleteById(id);
-           return " User with " + id + " delete successfully";
-       }
+//       @Override
+//      public String deleteData(int id) {
+//      student.deleteById(id);
+//      return " User with " + id + " delete successfully";
+// }
+
 }
