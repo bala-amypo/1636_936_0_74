@@ -16,13 +16,13 @@ public class StudentServiceImpl implements StudentService{
   public StudentEntity postData(StudentEntity stu){
     return student.save(stu);
   }
-  @Override
-  public List<StudentEntity> getAllData(){
-    return student.findAll();
-  }
-  @Override
-  public  String deleteData(int id){
-    student.deleteById(id);
-    return " User with " + id + " delete successfully";
-  }
+//   @Override
+//   public List<StudentEntity> getAllData(){
+//     return student.findAll();
+//   }
+//   @Override
+//   public  String deleteData(int id){
+//     student.deleteById(id);
+//     return " User with " + id + " delete successfully";
+//   }
 }

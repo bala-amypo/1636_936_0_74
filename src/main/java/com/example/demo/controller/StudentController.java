@@ -19,13 +19,13 @@ public class StudentController {
         return ser.postData(stu);
     }
 
-    @PostMapping("/get")
-    public List<StudentEntity> getVal() {
-        return ser.getAllData();
-    }
+    // @PostMapping("/get")
+    // public List<StudentEntity> getVal() {
+    //     return ser.getAllData();
+    // }
 
-    @PostMapping("/delete/{id}")
-    public String deleteValue(@PathVariable int id) {
-        return ser.deleteData(id);
-    }
+    // @PostMapping("/delete/{id}")
+    // public String deleteValue(@PathVariable int id) {
+    //     return ser.deleteData(id);
+    // }
 }

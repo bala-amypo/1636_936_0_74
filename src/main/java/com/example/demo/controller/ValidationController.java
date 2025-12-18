@@ -19,13 +19,13 @@ public class ValidationController {
         return ser.postData(stu);
     }
 
-    @PostMapping("/get")
-    public List<ValidationEntity> getVal() {
-        return ser.getAllData();
-    }
+    // @PostMapping("/get")
+    // public List<ValidationEntity> getVal() {
+    //     return ser.getAllData();
+    // }
 
-    @PostMapping("/delete/{id}")
-    public String deleteValue(@PathVariable int id) {
-        return ser.deleteData(id);
-    }
+    // @PostMapping("/delete/{id}")
+    // public String deleteValue(@PathVariable int id) {
+    //     return ser.deleteData(id);
+    // }
 }
