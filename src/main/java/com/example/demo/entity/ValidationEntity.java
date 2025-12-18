@@ -29,7 +29,7 @@ public class ValidationEntity {
     private String password;
 
     @Positive(message = "Age must be a positive number")
-    @Max(value = 30, message = "Age must not be greater than 30")
+    @Max(30, message = "Age must not be greater than 30")
     private int age;
 
     // Constructors
