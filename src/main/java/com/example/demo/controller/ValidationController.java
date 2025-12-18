@@ -15,12 +15,12 @@ public class ValidationController {
     ValidationService ser;
 
     @PostMapping("/post")
-    public StudentEntity sendData(@RequestBody StudentEntity stu) {
+    public ValidationEntity sendData(@RequestBody ValidationEntity stu) {
         return ser.postData(stu);
     }
 
     @PostMapping("/get")
-    public List<StudentEntity> getVal() {
+    public List<ValidationEntity> getVal() {
         return ser.getAllData();
     }
 
