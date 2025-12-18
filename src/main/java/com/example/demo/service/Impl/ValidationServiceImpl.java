@@ -13,12 +13,12 @@ public class ValidationServiceImpl implements ValidationService {
        @Autowired ValidationRepo student;
 
        @Override
-       public ValidationEntity postData(tEntity stu) {
+       public ValidationEntity postData(ValidationEntity stu) {
            return student.save(stu);
        }
 
        @Override
-       public List<StudentEntity> getAllData() {
+       public List<ValidationEntity> getAllData() {
            return student.findAll();
        }
 
