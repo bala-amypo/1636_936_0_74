@@ -11,6 +11,8 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
 
 @Entity
+
+@Data
 public class ValidationEntity {
 
     @Id
@@ -31,6 +33,8 @@ public class ValidationEntity {
     @Positive(message = "Age must be a positive number")
     @Max(value = 30, message = "Age must not be greater than 30")
     private int age;
+
+    
 
     // Constructors
     // public ValidationEntity() {}
