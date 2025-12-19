@@ -4,7 +4,7 @@ import java.util.List;
 import com.example.demo.entity. IdEntity;
 
 public interface IdService{
-     IdEntity postData( StuEntity stu); //method declaration
+     IdEntity postData( IdEntity stu); //method declaration
     // List<  IdEntity> getAllData();
     // String deleteData (int id);
     //   IdEntity getData(Long id);
