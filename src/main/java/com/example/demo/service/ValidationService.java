@@ -7,5 +7,5 @@ public interface ValidationService{
     ValidationEntity postData(ValidationEntity stu); //method declaration
     // List<ValidationEntity> getAllData();
     // String deleteData (int id);
-     ValidationEntity getData(Long id)
+     ValidationEntity getData(Long id);
 }
