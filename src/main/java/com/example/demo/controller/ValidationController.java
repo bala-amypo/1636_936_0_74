@@ -5,10 +5,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
 import org.springframework.beans.factory.annotation.Autowired;
-// import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 // import java.util.List;
 // import org.springframework.web.bind.annotation.DeleteMapping;
 // import org.springframework.web.bind.annotation.PathVariable;
+
 import jakarta.validation.Valid;
 
 
@@ -30,5 +31,7 @@ public class ValidationController{
     //     return ser.deleteData(id);
     // }
     @GetMapping("/get1{id}")
-    public Validat
+    public ValidationEntity getValue(@PathVariable int id){
+    return ser.getData(id);
+}
 }
