@@ -49,7 +49,7 @@ public class StudentEntity{
     }
 
     public StudentEntity(){};
-    public StudentEntity(Integer id, String name, String username, String password, Date created){
+    public StudentEntity(int id, String name, String username, String password, Date created){
         this.id=id;
         this.name=name;
         this.username=username;
