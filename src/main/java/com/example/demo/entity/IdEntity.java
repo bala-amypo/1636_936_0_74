@@ -27,7 +27,7 @@ public class IdEntity {
     private Long id;
     private String dep;
     @OneToOne
-    @JoinColumn(name="id")
+    @JoinColumn(name="student_id")
     private StuEntity stu;
    
 }

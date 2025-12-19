@@ -16,7 +16,7 @@ public class StuController {
     StuService ser;
 
     @PostMapping("/post")
-    public StudentEntity sendData(@RequestBody StuEntity stu) {
+    public StuEntity sendData(@RequestBody StuEntity stu) {
         return ser.postData(stu);
     }
 
