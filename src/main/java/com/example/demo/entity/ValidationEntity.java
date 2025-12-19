@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@ALLArgsConstructor
+@AllArgsConstructor
 @NoArgsConstructor
 public class ValidationEntity {
 
