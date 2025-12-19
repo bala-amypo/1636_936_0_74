@@ -16,44 +16,44 @@ public class StudentEntity{
     private String password;
     private Date created;
 
-    public void setId(Integer id){
-        this.id=id;
-    }
-    public void setName(String name){
-        this.name=name;
-    }
-    public void setUsername(String username){
-        this.username=username;
-    }
-    public void setPassword(String password){
-        this.password=password;
-    }
-    public void setCreated(Date created){
-        this.created=created;
-    }
+    // public void setId(Integer id){
+    //     this.id=id;
+    // }
+    // public void setName(String name){
+    //     this.name=name;
+    // }
+    // public void setUsername(String username){
+    //     this.username=username;
+    // }
+    // public void setPassword(String password){
+    //     this.password=password;
+    // }
+    // public void setCreated(Date created){
+    //     this.created=created;
+    // }
 
-    public Integer getId(){
-        return id;
-    }
-    public String getName(){
-        return name;
-    }
-    public String getUsername(){
-        return username;
-    }
-    public String getPassword(){
-        return password;
-    }
-    public Date getCreated(){
-        return created;
-    }
+    // public Integer getId(){
+    //     return id;
+    // }
+    // public String getName(){
+    //     return name;
+    // }
+    // public String getUsername(){
+    //     return username;
+    // }
+    // public String getPassword(){
+    //     return password;
+    // }
+    // public Date getCreated(){
+    //     return created;
+    // }
 
-    public StudentEntity(){};
-    public StudentEntity(int id, String name, String username, String password, Date created){
-        this.id=id;
-        this.name=name;
-        this.username=username;
-        this.password=password;
-        this.created=created;
-    }
+    // public StudentEntity(){};
+    // public StudentEntity(int id, String name, String username, String password, Date created){
+    //     this.id=id;
+    //     this.name=name;
+    //     this.username=username;
+    //     this.password=password;
+    //     this.created=created;
+    // }
 }
