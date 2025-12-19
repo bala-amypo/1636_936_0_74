@@ -3,9 +3,9 @@ package com.example.demo.service;
 import java.util.List;
 import com.example.demo.entity.TimestampEntity;
 
-public interface ValidationService{
-    ValidationEntity postData(ValidationEntity stu); //method declaration
-    // List<ValidationEntity> getAllData();
+public interface  TimestampService{
+     TimestampEntity postData( TimestampEntity stu); //method declaration
+    // List< TimestampEntity> getAllData();
     // String deleteData (int id);
-     ValidationEntity getData(Long id);
+      TimestampEntity getData(Long id);
 }

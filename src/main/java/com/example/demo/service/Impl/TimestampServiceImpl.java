@@ -10,14 +10,14 @@ import com.example.demo.exception.Exception;
 // import java.util.List;
 
 @Service
-public class ValidationServiceImpl implements ValidationService{
-       @Autowired ValidationRepo student;
+public class  TimestampServiceImpl implements  TimestampService{
+       @Autowired  TimestampRepo student;
        @Override
-  public ValidationEntity postData(ValidationEntity stu){
+  public  TimestampEntity postData( TimestampEntity stu){
     return student.save(stu);
   }
 //   @Override
-//   public List<StudentEntity>getAllData(){
+//   public List< TimestampEntity>getAllData(){
 //     return student.findAll();
 //   }
 //   @Override
@@ -26,7 +26,7 @@ public class ValidationServiceImpl implements ValidationService{
 //     return "User with "+id+" deleted successful";
 //   }
 @Override
-public ValidationEntity getData(Long id){
+public  TimestampEntity getData(Long id){
   return student.findById(id).orElseThrow(()-> new ValidationException("Invalid Id"+id));
 }
 }
