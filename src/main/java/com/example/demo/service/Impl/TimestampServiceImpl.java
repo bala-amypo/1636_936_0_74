@@ -24,8 +24,8 @@ public class  TimestampServiceImpl implements  TimestampService{
 //     student.deleteById(id);
 //     return "User with "+id+" deleted successful";
 //   }
-@Override
-public  TimestampEntity getData(Long id){
-  return student.findById(id).orElseThrow(()-> new  TimestampException("Invalid Id"+id));
-}
+// @Override
+// public  TimestampEntity getData(Long id){
+//   return student.findById(id).orElseThrow(()-> new  TimestampException("Invalid Id"+id));
+// }
 }

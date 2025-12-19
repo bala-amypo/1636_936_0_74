@@ -7,5 +7,5 @@ public interface  TimestampService{
      TimestampEntity postData( TimestampEntity stu); //method declaration
     // List< TimestampEntity> getAllData();
     // String deleteData (int id);
-      TimestampEntity getData(Long id);
+    //   TimestampEntity getData(Long id);
 }
