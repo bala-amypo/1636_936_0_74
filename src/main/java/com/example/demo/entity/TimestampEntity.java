@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ValidationEntity {
+public class TimestampEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
