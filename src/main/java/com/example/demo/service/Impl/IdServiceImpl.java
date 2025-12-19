@@ -9,7 +9,7 @@ import com.example.demo.repository.IdRepo;
 // import java.util.List;
 
 @Service
-public class  TimestampServiceImpl implements  TimestampService{
+public class  IdServiceImpl implements  IdService{
        @Autowired  TimestampRepo student;
        @Override
   public  TimestampEntity postData( TimestampEntity stu){
