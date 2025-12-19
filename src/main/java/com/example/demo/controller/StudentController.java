@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 public class StudentController {
+
     @Autowired
     StudentService ser;
 
@@ -20,18 +21,8 @@ public class StudentController {
         return ser.postData(stu);
     }
 
-    // @PostMapping("/get")
-    // public List<StudentEntity> getVal() {
-    //     return ser.getAllData();
-    // }
-
-    // @PostMapping("/delete/{id}")
-    // public String deleteValue(@PathVariable int id) {
-    //     return ser.deleteData(id);
-    // }
-    @GetMapping("/get{id}")
+    @GetMapping("/get/{id}")
     public StudentEntity getValue(@PathVariable Long id){
-    return ser.getData(id);
-}
-
+        return ser.getData(id);
+    }
 }
