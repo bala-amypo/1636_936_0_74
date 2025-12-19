@@ -29,9 +29,9 @@ public class StuController {
     // public String deleteValue(@PathVariable int id) {
     //     return ser.deleteData(id);
     // }
-    @GetMapping("/get{id}")
-    public StuEntity getValue(@PathVariable int id){
-    return ser.getData(id);
-}
+//     @GetMapping("/get{id}")
+//     public StuEntity getValue(@PathVariable int id){
+//     return ser.getData(id);
+// }
 
 }
