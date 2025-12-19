@@ -20,7 +20,8 @@ public class StudentEntity{
     //     this.id=id;
     // }
     // public void setName(String name){
-    //     this.name=name;
+    //     this.name=name;-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    +
     // }
     // public void setUsername(String username){
     //     this.username=username;
