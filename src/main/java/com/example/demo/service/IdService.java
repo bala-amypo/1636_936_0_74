@@ -7,5 +7,5 @@ public interface IdService{
      IdEntity postData( IdEntity stu); //method declaration
     // List<  IdEntity> getAllData();
     // String deleteData (int id);
-      IdEntity getData(Long id);?
+    //   IdEntity getData(Long id);
 }
