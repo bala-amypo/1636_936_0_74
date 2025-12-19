@@ -31,7 +31,7 @@ public class ValidationController{
     //     return ser.deleteData(id);
     // }
     @GetMapping("/get1{id}")
-    public ValidationEntity getValue(@PathVariable int id){
+    public ValidationEntity getValue(@PathVariable Long id){
     return ser.getData(id);
 }
 }
