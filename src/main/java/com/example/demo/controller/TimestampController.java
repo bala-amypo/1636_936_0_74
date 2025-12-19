@@ -16,7 +16,7 @@ import jakarta.validation.Valid;
 @RestController
 public class TimestampController{
     @Autowired TimestampService ser;
-    @PostMapping("/post1")
+    @PostMapping("/post2")
     public TimestampEntity sendData(@Valid @RequestBody TimestampEntity stu){
         return ser.postData(stu);
     }
@@ -30,8 +30,8 @@ public class TimestampController{
     // public String deleteValue(@PathVariable int id){
     //     return ser.deleteData(id);
     // }
-    @GetMapping("/get1{id}")
-    public TimestampEntity getValue(@PathVariable Long id){
-    return ser.getData(id);
-}
+    // @GetMapping("/get1{id}")
+    // public TimestampEntity getValue(@PathVariable Long id){
+    // return ser.getData(id);
+// }
 }
