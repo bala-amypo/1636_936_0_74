@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @RestController
-public class StudentController {
+public class StuController {
     @Autowired
-    StudentService ser;
+    StuService ser;
 
     @PostMapping("/post")
-    public StudentEntity sendData(@RequestBody StudentEntity stu) {
+    public StudentEntity sendData(@RequestBody StuEntity stu) {
         return ser.postData(stu);
     }
 
@@ -30,7 +30,7 @@ public class StudentController {
     //     return ser.deleteData(id);
     // }
     @GetMapping("/get{id}")
-    public StudentEntity getValue(@PathVariable int id){
+    public StuEntity getValue(@PathVariable int id){
     return ser.getData(id);
 }
 
