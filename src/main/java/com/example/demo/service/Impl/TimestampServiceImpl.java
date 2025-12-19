@@ -27,6 +27,6 @@ public class  TimestampServiceImpl implements  TimestampService{
 //   }
 @Override
 public  TimestampEntity getData(Long id){
-  return student.findById(id).orElseThrow(()-> new ValidationException("Invalid Id"+id));
+  return student.findById(id).orElseThrow(()-> new  TimestampException("Invalid Id"+id));
 }
 }
