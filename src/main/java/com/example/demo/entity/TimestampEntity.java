@@ -24,5 +24,6 @@ public class ValidationEntity {
     private Long id;
     private String name;
     private String email;
-    
+    private LocalDateTime createAt;
+    private LocalDateTime updateAt;
 }
