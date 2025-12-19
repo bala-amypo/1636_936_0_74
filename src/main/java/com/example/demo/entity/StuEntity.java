@@ -20,23 +20,12 @@ import jakarta.persistence.PreUpdate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TimestampEntity {
+public class StuEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String email;
-    private LocalDateTime createAt;
-    private LocalDateTime updateAt;
-    LocalDateTime now =LocalDateTime.now();
-    @PrePersist
-    public void Oncreate(){
-        this.createAt = now;
-        this.updateAt = now;
-    }
-    @PreUpdate
-    public void Onupdate(){
-        this.updateAt = now;
-    }
+    private String regno;
+   
 }
