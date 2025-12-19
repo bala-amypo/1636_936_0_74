@@ -24,7 +24,7 @@ public class ValidationServiceImpl implements ValidationService{
 //     return "User with "+id+" deleted successful";
 //   }
 @Override
-public ValidationEntity getData(int id){
+public ValidationEntity getData(Integer id){
   return student.findById(id).orElse(null);
 }
 }
