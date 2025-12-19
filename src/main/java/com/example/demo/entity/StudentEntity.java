@@ -7,6 +7,10 @@ import jakarta.persistence.Id;
 import java.util.Date;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
 public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -15,6 +19,7 @@ public class StudentEntity{
     private String username;
     private String password;
     private Date created;
+
 
     // public void setId(Integer id){
     //     this.id=id;
