@@ -28,6 +28,6 @@ public class IdEntity {
     private String dep;
     @OneToOne
     @JoinColumn(name="id")
-    private StuEntity 
+    private StuEntity stu;
    
 }
