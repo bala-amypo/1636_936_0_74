@@ -8,7 +8,7 @@ public class GlobalException{
 
     @ExceptionHandler(ValidationException.class)
     public ResponseBody<String> handleValidation( ValidationException ex){
-        return 
+        return new ResponseBody<string>(ex.getMessage);
 
     }
 }
