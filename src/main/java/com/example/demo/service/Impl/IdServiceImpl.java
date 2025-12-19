@@ -10,9 +10,9 @@ import com.example.demo.repository.IdRepo;
 
 @Service
 public class  IdServiceImpl implements  IdService{
-       @Autowired  TimestampRepo student;
+       @Autowired  IdRepo student;
        @Override
-  public  TimestampEntity postData( TimestampEntity stu){
+  public IdEntity postData( IdEntity stu){
     return student.save(stu);
   }
 //   @Override
